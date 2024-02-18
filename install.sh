@@ -32,10 +32,8 @@ make
 sudo make install
 cd .. || exit
 
-sudo apt update
-sudo apt upgrade
 sudo apt install build-essential
-bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
+sudo bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 sudo systemctl enable nodered.service
 
 cd ~/.node-red
