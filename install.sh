@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo Install rpitx - some package need internet connection -
+echo Install rpitx and node-red - some package need internet connection -
 
 sudo date -s "$(wget -qSO- --max-redirect=0 google.com 2>&1 | grep Date: | cut -d' ' -f5-8)Z"
 sudo apt-get update
