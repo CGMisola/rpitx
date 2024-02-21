@@ -32,13 +32,6 @@ make
 sudo make install
 cd .. || exit
 
-sudo apt install build-essential git curl
-sudo bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
-sudo systemctl enable nodered.service
-
-cd ~/.node-red
-npm i node-red-node-email
-
 printf "\n\n"
 printf "In order to run properly, rpitx need to modify /boot/config.txt. Are you sure (y/n) "
 read -r CONT
